@@ -1,987 +1,1254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>50 Dinâmicas de Educação Física | Guia Completo do Professor</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <!-- Meta Pixel Code -->
-  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '980701594419086');fbq('track', 'PageView');</script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=980701594419086&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel Code -->
-  <style>
-    :root {
-      --verde: #1a7a2e;
-      --verde-claro: #25a63e;
-      --amarelo: #f5c800;
-      --amarelo-escuro: #d4a800;
-      --laranja: #e85d04;
-      --escuro: #0d1f0f;
-      --escuro2: #142a17;
-      --branco: #f8fdf9;
-      --cinza: #c8d4c9;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50 Dinâmicas de Educação Física | Guia Completo do Professor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "980701594419086");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=980701594419086&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+      :root {
+        --verde: #1a7a2e;
+        --verde-claro: #25a63e;
+        --amarelo: #f5c800;
+        --amarelo-escuro: #d4a800;
+        --laranja: #e85d04;
+        --escuro: #0d1f0f;
+        --escuro2: #142a17;
+        --branco: #f8fdf9;
+        --cinza: #c8d4c9;
+      }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: 'Nunito', sans-serif;
-      background: var(--escuro);
-      color: var(--branco);
-      overflow-x: hidden;
-    }
+      body {
+        font-family: "Nunito", sans-serif;
+        background: var(--escuro);
+        color: var(--branco);
+        overflow-x: hidden;
+      }
 
-    /* ─── TOPO ─── */
-    .topo-faixa {
-      background: var(--amarelo);
-      color: var(--escuro);
-      text-align: center;
-      padding: 10px 20px;
-      font-weight: 800;
-      font-size: 0.95rem;
-      letter-spacing: 0.03em;
-    }
+      /* ─── TOPO ─── */
+      .topo-faixa {
+        background: var(--amarelo);
+        color: var(--escuro);
+        text-align: center;
+        padding: 10px 20px;
+        font-weight: 800;
+        font-size: 0.95rem;
+        letter-spacing: 0.03em;
+      }
 
-    /* ─── HERO ─── */
-    .hero {
-      background: var(--escuro2);
-      padding: 60px 20px 50px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(37,166,62,0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-label {
-      display: inline-block;
-      background: var(--verde-claro);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 6px 16px;
-      border-radius: 100px;
-      margin-bottom: 22px;
-    }
-    .hero h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.8rem, 9vw, 5.5rem);
-      line-height: 1;
-      color: var(--amarelo);
-      letter-spacing: 0.02em;
-      margin-bottom: 16px;
-    }
-    .hero h1 span {
-      color: var(--branco);
-    }
-    .hero-sub {
-      font-size: clamp(1.05rem, 3vw, 1.3rem);
-      color: var(--cinza);
-      max-width: 600px;
-      margin: 0 auto 10px;
-      font-weight: 600;
-      line-height: 1.55;
-    }
-    .hero-sub strong {
-      color: var(--branco);
-    }
+      /* ─── HERO ─── */
+      .hero {
+        background: var(--escuro2);
+        padding: 60px 20px 50px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at 50% 0%,
+          rgba(37, 166, 62, 0.18) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .hero-label {
+        display: inline-block;
+        background: var(--verde-claro);
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 100px;
+        margin-bottom: 22px;
+      }
+      .hero h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.8rem, 9vw, 5.5rem);
+        line-height: 1;
+        color: var(--amarelo);
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+      }
+      .hero h1 span {
+        color: var(--branco);
+      }
+      .hero-sub {
+        font-size: clamp(1.05rem, 3vw, 1.3rem);
+        color: var(--cinza);
+        max-width: 600px;
+        margin: 0 auto 10px;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+      .hero-sub strong {
+        color: var(--branco);
+      }
 
-    /* ─── SEÇÃO VÍDEO ─── */
-    .secao-video {
-      background: #0a1a0c;
-      padding: 50px 20px 60px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .video-label {
-      font-size: 0.8rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--verde-claro);
-      margin-bottom: 14px;
-    }
-    .video-titulo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(1.8rem, 6vw, 3rem);
-      text-align: center;
-      margin-bottom: 8px;
-      color: var(--branco);
-    }
-    .video-titulo span { color: var(--amarelo); }
-    .video-desc {
-      color: var(--cinza);
-      font-size: 1rem;
-      text-align: center;
-      max-width: 500px;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-    .video-wrapper {
-      width: 100%;
-      max-width: 380px;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 3px solid var(--verde-claro);
-      box-shadow: 0 0 40px rgba(37,166,62,0.3);
-    }
-    .video-wrapper blockquote {
-      margin: 0 !important;
-    }
+      /* ─── SEÇÃO VÍDEO ─── */
+      .secao-video {
+        background: #0a1a0c;
+        padding: 50px 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-label {
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--verde-claro);
+        margin-bottom: 14px;
+      }
+      .video-titulo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(1.8rem, 6vw, 3rem);
+        text-align: center;
+        margin-bottom: 8px;
+        color: var(--branco);
+      }
+      .video-titulo span {
+        color: var(--amarelo);
+      }
+      .video-desc {
+        color: var(--cinza);
+        font-size: 1rem;
+        text-align: center;
+        max-width: 500px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+      .video-wrapper {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 3px solid var(--verde-claro);
+        box-shadow: 0 0 40px rgba(37, 166, 62, 0.3);
+      }
+      .video-wrapper blockquote {
+        margin: 0 !important;
+      }
 
-    /* ─── CTA PRINCIPAL ─── */
-    .secao-cta {
-      background: linear-gradient(180deg, #0a1a0c 0%, var(--escuro2) 100%);
-      padding: 50px 20px 60px;
-      text-align: center;
-    }
-    .preco-ancora {
-      color: var(--cinza);
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: line-through;
-      margin-bottom: 6px;
-    }
-    .preco-real {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3rem, 12vw, 6rem);
-      color: var(--amarelo);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .preco-real span {
-      font-size: 0.45em;
-      vertical-align: super;
-      color: var(--amarelo);
-    }
-    .preco-detalhe {
-      color: var(--cinza);
-      font-size: 0.9rem;
-      margin-bottom: 28px;
-    }
-    .btn-cta {
-      display: inline-block;
-      background: linear-gradient(135deg, var(--verde-claro), var(--verde));
-      color: #fff;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 900;
-      font-size: clamp(1.1rem, 4vw, 1.35rem);
-      padding: 18px 42px;
-      border-radius: 12px;
-      text-decoration: none;
-      letter-spacing: 0.01em;
-      box-shadow: 0 8px 30px rgba(37,166,62,0.45);
-      transition: transform 0.2s, box-shadow 0.2s;
-      animation: pulse 2.2s ease-in-out infinite;
-    }
-    .btn-cta:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 40px rgba(37,166,62,0.6);
-    }
-    @keyframes pulse {
-      0%, 100% { box-shadow: 0 8px 30px rgba(37,166,62,0.45); }
-      50% { box-shadow: 0 8px 50px rgba(37,166,62,0.75); }
-    }
-    .cta-seguro {
-      margin-top: 16px;
-      color: var(--cinza);
-      font-size: 0.82rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-    .cta-seguro svg { flex-shrink: 0; }
+      /* ─── CTA PRINCIPAL ─── */
+      .secao-cta {
+        background: linear-gradient(180deg, #0a1a0c 0%, var(--escuro2) 100%);
+        padding: 50px 20px 60px;
+        text-align: center;
+      }
+      .preco-ancora {
+        color: var(--cinza);
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: line-through;
+        margin-bottom: 6px;
+      }
+      .preco-real {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(3rem, 12vw, 6rem);
+        color: var(--amarelo);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .preco-real span {
+        font-size: 0.45em;
+        vertical-align: super;
+        color: var(--amarelo);
+      }
+      .preco-detalhe {
+        color: var(--cinza);
+        font-size: 0.9rem;
+        margin-bottom: 28px;
+      }
+      .btn-cta {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--verde-claro), var(--verde));
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-weight: 900;
+        font-size: clamp(1.1rem, 4vw, 1.35rem);
+        padding: 18px 42px;
+        border-radius: 12px;
+        text-decoration: none;
+        letter-spacing: 0.01em;
+        box-shadow: 0 8px 30px rgba(37, 166, 62, 0.45);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        animation: pulse 2.2s ease-in-out infinite;
+      }
+      .btn-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 40px rgba(37, 166, 62, 0.6);
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 8px 30px rgba(37, 166, 62, 0.45);
+        }
+        50% {
+          box-shadow: 0 8px 50px rgba(37, 166, 62, 0.75);
+        }
+      }
+      .cta-seguro {
+        margin-top: 16px;
+        color: var(--cinza);
+        font-size: 0.82rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+      .cta-seguro svg {
+        flex-shrink: 0;
+      }
 
-    /* ─── DOR / IDENTIFICAÇÃO ─── */
-    .secao-dor {
-      background: var(--escuro);
-      padding: 70px 20px;
-    }
-    .secao-dor .container { max-width: 680px; margin: 0 auto; }
-    .secao-titulo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2rem, 7vw, 3.2rem);
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .secao-titulo span { color: var(--amarelo); }
-    .secao-subtitulo {
-      text-align: center;
-      color: var(--cinza);
-      font-size: 1.05rem;
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-    .dor-lista {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .dor-lista li {
-      background: var(--escuro2);
-      border-left: 4px solid var(--laranja);
-      border-radius: 10px;
-      padding: 16px 20px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--branco);
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      line-height: 1.5;
-    }
-    .dor-lista li .emoji { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+      /* ─── DOR / IDENTIFICAÇÃO ─── */
+      .secao-dor {
+        background: var(--escuro);
+        padding: 70px 20px;
+      }
+      .secao-dor .container {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      .secao-titulo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2rem, 7vw, 3.2rem);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .secao-titulo span {
+        color: var(--amarelo);
+      }
+      .secao-subtitulo {
+        text-align: center;
+        color: var(--cinza);
+        font-size: 1.05rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+      .dor-lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .dor-lista li {
+        background: var(--escuro2);
+        border-left: 4px solid var(--laranja);
+        border-radius: 10px;
+        padding: 16px 20px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--branco);
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        line-height: 1.5;
+      }
+      .dor-lista li .emoji {
+        font-size: 1.3rem;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
 
-    /* ─── O QUE É ─── */
-    .secao-produto {
-      background: linear-gradient(135deg, var(--verde) 0%, #0f4a1a 100%);
-      padding: 70px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .secao-produto::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      pointer-events: none;
-    }
-    .produto-badge {
-      display: inline-block;
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3);
-      color: #fff;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 6px 16px;
-      border-radius: 100px;
-      margin-bottom: 20px;
-    }
-    .secao-produto h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.2rem, 7vw, 3.8rem);
-      color: var(--amarelo);
-      margin-bottom: 16px;
-    }
-    .secao-produto p {
-      max-width: 620px;
-      margin: 0 auto 40px;
-      color: rgba(255,255,255,0.88);
-      font-size: 1.05rem;
-      line-height: 1.7;
-      font-weight: 600;
-    }
-    .stats-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    .stat-card {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 14px;
-      padding: 24px 28px;
-      min-width: 140px;
-      flex: 1;
-    }
-    .stat-num {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3.2rem;
-      color: var(--amarelo);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .stat-desc {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.8);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
+      /* ─── O QUE É ─── */
+      .secao-produto {
+        background: linear-gradient(135deg, var(--verde) 0%, #0f4a1a 100%);
+        padding: 70px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .secao-produto::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        pointer-events: none;
+      }
+      .produto-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border-radius: 100px;
+        margin-bottom: 20px;
+      }
+      .secao-produto h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.2rem, 7vw, 3.8rem);
+        color: var(--amarelo);
+        margin-bottom: 16px;
+      }
+      .secao-produto p {
+        max-width: 620px;
+        margin: 0 auto 40px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        font-weight: 600;
+      }
+      .stats-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .stat-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 14px;
+        padding: 24px 28px;
+        min-width: 140px;
+        flex: 1;
+      }
+      .stat-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3.2rem;
+        color: var(--amarelo);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .stat-desc {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
 
-    /* ─── CATEGORIAS ─── */
-    .secao-categorias {
-      background: var(--escuro);
-      padding: 70px 20px;
-    }
-    .categorias-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      max-width: 860px;
-      margin: 40px auto 0;
-    }
-    .cat-card {
-      background: var(--escuro2);
-      border: 1px solid rgba(37,166,62,0.2);
-      border-radius: 14px;
-      padding: 22px 24px;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    .cat-card:hover {
-      border-color: var(--verde-claro);
-      transform: translateY(-3px);
-    }
-    .cat-icone {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .cat-titulo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.3rem;
-      color: var(--amarelo);
-      margin-bottom: 6px;
-      letter-spacing: 0.03em;
-    }
-    .cat-info {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--verde-claro);
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      margin-bottom: 8px;
-    }
-    .cat-desc {
-      color: var(--cinza);
-      font-size: 0.9rem;
-      line-height: 1.55;
-    }
+      /* ─── CATEGORIAS ─── */
+      .secao-categorias {
+        background: var(--escuro);
+        padding: 70px 20px;
+      }
+      .categorias-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        max-width: 860px;
+        margin: 40px auto 0;
+      }
+      .cat-card {
+        background: var(--escuro2);
+        border: 1px solid rgba(37, 166, 62, 0.2);
+        border-radius: 14px;
+        padding: 22px 24px;
+        transition:
+          border-color 0.2s,
+          transform 0.2s;
+      }
+      .cat-card:hover {
+        border-color: var(--verde-claro);
+        transform: translateY(-3px);
+      }
+      .cat-icone {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      .cat-titulo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.3rem;
+        color: var(--amarelo);
+        margin-bottom: 6px;
+        letter-spacing: 0.03em;
+      }
+      .cat-info {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--verde-claro);
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        margin-bottom: 8px;
+      }
+      .cat-desc {
+        color: var(--cinza);
+        font-size: 0.9rem;
+        line-height: 1.55;
+      }
 
-    /* ─── PROVA SOCIAL ─── */
-    .secao-prova {
-      background: var(--escuro2);
-      padding: 70px 20px;
-    }
-    .depoimentos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 860px;
-      margin: 40px auto 0;
-    }
-    .depo-card {
-      background: var(--escuro);
-      border: 1px solid rgba(245,200,0,0.15);
-      border-radius: 14px;
-      padding: 24px;
-    }
-    .estrelas { color: var(--amarelo); font-size: 1rem; margin-bottom: 12px; }
-    .depo-texto {
-      color: var(--branco);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      font-weight: 600;
-      margin-bottom: 16px;
-      font-style: italic;
-    }
-    .depo-autor {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .depo-avatar {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: var(--verde);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1rem;
-      color: #fff;
-      flex-shrink: 0;
-    }
-    .depo-nome {
-      font-weight: 800;
-      font-size: 0.9rem;
-      color: var(--branco);
-    }
-    .depo-cargo {
-      font-size: 0.78rem;
-      color: var(--cinza);
-    }
+      /* ─── PROVA SOCIAL ─── */
+      .secao-prova {
+        background: var(--escuro2);
+        padding: 70px 20px;
+      }
+      .depoimentos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 860px;
+        margin: 40px auto 0;
+      }
+      .depo-card {
+        background: var(--escuro);
+        border: 1px solid rgba(245, 200, 0, 0.15);
+        border-radius: 14px;
+        padding: 24px;
+      }
+      .estrelas {
+        color: var(--amarelo);
+        font-size: 1rem;
+        margin-bottom: 12px;
+      }
+      .depo-texto {
+        color: var(--branco);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        font-weight: 600;
+        margin-bottom: 16px;
+        font-style: italic;
+      }
+      .depo-autor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .depo-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--verde);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 1rem;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .depo-nome {
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: var(--branco);
+      }
+      .depo-cargo {
+        font-size: 0.78rem;
+        color: var(--cinza);
+      }
 
-    /* ─── QUEBRA DE OBJEÇÃO ─── */
-    .secao-objecao {
-      background: var(--escuro);
-      padding: 70px 20px;
-    }
-    .objecao-lista {
-      max-width: 660px;
-      margin: 40px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .objecao-item {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 16px;
-      align-items: start;
-    }
-    .objecao-step {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--verde-claro);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      color: #fff;
-      flex-shrink: 0;
-    }
-    .objecao-titulo {
-      font-weight: 900;
-      font-size: 1rem;
-      color: var(--amarelo);
-      margin-bottom: 4px;
-    }
-    .objecao-texto {
-      color: var(--cinza);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
+      /* ─── QUEBRA DE OBJEÇÃO ─── */
+      .secao-objecao {
+        background: var(--escuro);
+        padding: 70px 20px;
+      }
+      .objecao-lista {
+        max-width: 660px;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .objecao-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: start;
+      }
+      .objecao-step {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--verde-claro);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.4rem;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .objecao-titulo {
+        font-weight: 900;
+        font-size: 1rem;
+        color: var(--amarelo);
+        margin-bottom: 4px;
+      }
+      .objecao-texto {
+        color: var(--cinza);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
 
-    /* ─── BÔNUS ─── */
-    .secao-bonus {
-      background: var(--escuro2);
-      padding: 70px 20px;
-      text-align: center;
-    }
-    .bonus-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      max-width: 760px;
-      margin: 40px auto 30px;
-    }
-    .bonus-card {
-      background: var(--escuro);
-      border: 1px dashed var(--amarelo);
-      border-radius: 14px;
-      padding: 22px;
-      text-align: left;
-    }
-    .bonus-tag {
-      display: inline-block;
-      background: var(--laranja);
-      color: #fff;
-      font-size: 0.7rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 3px 10px;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-    .bonus-titulo {
-      font-weight: 900;
-      font-size: 1rem;
-      color: var(--branco);
-      margin-bottom: 6px;
-    }
-    .bonus-desc {
-      color: var(--cinza);
-      font-size: 0.87rem;
-      line-height: 1.55;
-    }
-    .bonus-valor {
-      margin-top: 12px;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      color: var(--amarelo);
-    }
-    .ancora-total {
-      background: var(--escuro);
-      border: 2px solid var(--amarelo);
-      border-radius: 14px;
-      padding: 28px;
-      max-width: 480px;
-      margin: 0 auto;
-    }
-    .ancora-linha {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      font-size: 0.95rem;
-      color: var(--cinza);
-    }
-    .ancora-linha:last-child { border-bottom: none; }
-    .ancora-linha .nome { font-weight: 700; color: var(--branco); }
-    .ancora-linha .val { color: var(--cinza); text-decoration: line-through; font-size: 0.85rem; }
-    .ancora-total-linha {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 2px solid var(--amarelo);
-    }
-    .ancora-total-linha .label {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      color: var(--branco);
-    }
-    .ancora-total-linha .preco-final {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      color: var(--amarelo);
-    }
+      /* ─── BÔNUS ─── */
+      .secao-bonus {
+        background: var(--escuro2);
+        padding: 70px 20px;
+        text-align: center;
+      }
+      .bonus-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        max-width: 760px;
+        margin: 40px auto 30px;
+      }
+      .bonus-card {
+        background: var(--escuro);
+        border: 1px dashed var(--amarelo);
+        border-radius: 14px;
+        padding: 22px;
+        text-align: left;
+      }
+      .bonus-tag {
+        display: inline-block;
+        background: var(--laranja);
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 3px 10px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+      .bonus-titulo {
+        font-weight: 900;
+        font-size: 1rem;
+        color: var(--branco);
+        margin-bottom: 6px;
+      }
+      .bonus-desc {
+        color: var(--cinza);
+        font-size: 0.87rem;
+        line-height: 1.55;
+      }
+      .bonus-valor {
+        margin-top: 12px;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.4rem;
+        color: var(--amarelo);
+      }
+      .ancora-total {
+        background: var(--escuro);
+        border: 2px solid var(--amarelo);
+        border-radius: 14px;
+        padding: 28px;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      .ancora-linha {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 0.95rem;
+        color: var(--cinza);
+      }
+      .ancora-linha:last-child {
+        border-bottom: none;
+      }
+      .ancora-linha .nome {
+        font-weight: 700;
+        color: var(--branco);
+      }
+      .ancora-linha .val {
+        color: var(--cinza);
+        text-decoration: line-through;
+        font-size: 0.85rem;
+      }
+      .ancora-total-linha {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 2px solid var(--amarelo);
+      }
+      .ancora-total-linha .label {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.4rem;
+        color: var(--branco);
+      }
+      .ancora-total-linha .preco-final {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        color: var(--amarelo);
+      }
 
-    /* ─── CTA FINAL ─── */
-    .secao-cta-final {
-      background: linear-gradient(135deg, var(--verde) 0%, #0a2e10 100%);
-      padding: 80px 20px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .secao-cta-final h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.4rem, 8vw, 4.5rem);
-      color: var(--amarelo);
-      margin-bottom: 14px;
-      line-height: 1.05;
-    }
-    .secao-cta-final p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1.1rem;
-      font-weight: 700;
-      max-width: 520px;
-      margin: 0 auto 36px;
-      line-height: 1.6;
-    }
+      /* ─── CTA FINAL ─── */
+      .secao-cta-final {
+        background: linear-gradient(135deg, var(--verde) 0%, #0a2e10 100%);
+        padding: 80px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .secao-cta-final h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(2.4rem, 8vw, 4.5rem);
+        color: var(--amarelo);
+        margin-bottom: 14px;
+        line-height: 1.05;
+      }
+      .secao-cta-final p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.1rem;
+        font-weight: 700;
+        max-width: 520px;
+        margin: 0 auto 36px;
+        line-height: 1.6;
+      }
 
-    /* ─── GARANTIA ─── */
-    .secao-garantia {
-      background: var(--escuro);
-      padding: 70px 20px;
-    }
-    .garantia-box {
-      max-width: 600px;
-      margin: 0 auto;
-      background: var(--escuro2);
-      border: 2px solid var(--verde-claro);
-      border-radius: 20px;
-      padding: 40px 32px;
-      text-align: center;
-    }
-    .garantia-icone { font-size: 3.5rem; margin-bottom: 16px; }
-    .garantia-titulo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.2rem;
-      color: var(--amarelo);
-      margin-bottom: 12px;
-    }
-    .garantia-texto {
-      color: var(--cinza);
-      font-size: 1rem;
-      line-height: 1.7;
-    }
+      /* ─── GARANTIA ─── */
+      .secao-garantia {
+        background: var(--escuro);
+        padding: 70px 20px;
+      }
+      .garantia-box {
+        max-width: 600px;
+        margin: 0 auto;
+        background: var(--escuro2);
+        border: 2px solid var(--verde-claro);
+        border-radius: 20px;
+        padding: 40px 32px;
+        text-align: center;
+      }
+      .garantia-icone {
+        font-size: 3.5rem;
+        margin-bottom: 16px;
+      }
+      .garantia-titulo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2.2rem;
+        color: var(--amarelo);
+        margin-bottom: 12px;
+      }
+      .garantia-texto {
+        color: var(--cinza);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
 
-    /* ─── FAQ ─── */
-    .secao-faq {
-      background: var(--escuro2);
-      padding: 70px 20px;
-    }
-    .faq-lista {
-      max-width: 680px;
-      margin: 40px auto 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    details {
-      background: var(--escuro);
-      border: 1px solid rgba(37,166,62,0.25);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    details[open] { border-color: var(--verde-claro); }
-    summary {
-      padding: 18px 22px;
-      font-weight: 800;
-      font-size: 0.98rem;
-      color: var(--branco);
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-    summary::-webkit-details-marker { display: none; }
-    summary::after {
-      content: '+';
-      font-size: 1.4rem;
-      color: var(--verde-claro);
-      flex-shrink: 0;
-      transition: transform 0.2s;
-    }
-    details[open] summary::after { transform: rotate(45deg); }
-    .faq-resp {
-      padding: 0 22px 18px;
-      color: var(--cinza);
-      font-size: 0.93rem;
-      line-height: 1.7;
-    }
+      /* ─── FAQ ─── */
+      .secao-faq {
+        background: var(--escuro2);
+        padding: 70px 20px;
+      }
+      .faq-lista {
+        max-width: 680px;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      details {
+        background: var(--escuro);
+        border: 1px solid rgba(37, 166, 62, 0.25);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      details[open] {
+        border-color: var(--verde-claro);
+      }
+      summary {
+        padding: 18px 22px;
+        font-weight: 800;
+        font-size: 0.98rem;
+        color: var(--branco);
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary::after {
+        content: "+";
+        font-size: 1.4rem;
+        color: var(--verde-claro);
+        flex-shrink: 0;
+        transition: transform 0.2s;
+      }
+      details[open] summary::after {
+        transform: rotate(45deg);
+      }
+      .faq-resp {
+        padding: 0 22px 18px;
+        color: var(--cinza);
+        font-size: 0.93rem;
+        line-height: 1.7;
+      }
 
-    /* ─── RODAPÉ ─── */
-    footer {
-      background: #080f09;
-      padding: 32px 20px;
-      text-align: center;
-      color: rgba(200,212,201,0.4);
-      font-size: 0.8rem;
-      line-height: 1.8;
-    }
-    footer a { color: rgba(200,212,201,0.5); }
+      /* ─── RODAPÉ ─── */
+      footer {
+        background: #080f09;
+        padding: 32px 20px;
+        text-align: center;
+        color: rgba(200, 212, 201, 0.4);
+        font-size: 0.8rem;
+        line-height: 1.8;
+      }
+      footer a {
+        color: rgba(200, 212, 201, 0.5);
+      }
 
-    /* ─── UTILIDADES ─── */
-    .container { max-width: 720px; margin: 0 auto; }
-    .text-center { text-align: center; }
-    .mt-sm { margin-top: 12px; }
-    .mt-md { margin-top: 24px; }
+      /* ─── UTILIDADES ─── */
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .mt-sm {
+        margin-top: 12px;
+      }
+      .mt-md {
+        margin-top: 24px;
+      }
 
-    @media (max-width: 480px) {
-      .stats-grid { gap: 12px; }
-      .stat-card { min-width: 110px; padding: 18px 16px; }
-      .stat-num { font-size: 2.5rem; }
-      .btn-cta { padding: 16px 28px; }
-    }
-  </style>
-</head>
-<body>
+      @media (max-width: 480px) {
+        .stats-grid {
+          gap: 12px;
+        }
+        .stat-card {
+          min-width: 110px;
+          padding: 18px 16px;
+        }
+        .stat-num {
+          font-size: 2.5rem;
+        }
+        .btn-cta {
+          padding: 16px 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- FAIXA TOPO -->
+    <div class="topo-faixa">
+      🔥 Oferta por tempo limitado — Acesso imediato após o pagamento
+    </div>
 
-  <!-- FAIXA TOPO -->
-  <div class="topo-faixa">
-    🔥 Oferta por tempo limitado — Acesso imediato após o pagamento
-  </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-label">Para professores de Educação Física</div>
+        <h1>
+          50 Dinâmicas Inovadoras<br /><span>e prontas para usar</span
+          ><br />amanhã com seus alunos
+        </h1>
+        <p class="hero-sub">
+          Sua próxima aula animada e <strong>Inesquecível</strong> a 1 clique
+        </p>
+      </div>
+    </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-label">Para professores de Educação Física</div>
-      <h1>50 Dinâmicas Inovadoras<br /><span>e prontas para usar</span><br />amanhã com seus alunos</h1>
-      <p class="hero-sub">
-        Sua próxima aula animada e <strong>Inesquecível</strong> a 1 clique
+    <!-- SEÇÃO VÍDEO TIKTOK -->
+    <section class="secao-video">
+      <div class="video-label">👇 Veja como é na prática</div>
+      <h2 class="video-titulo">
+        É <span>assim</span> que sua aula<br />vai ficar
+      </h2>
+      <p class="video-desc">
+        Engajamento de verdade. Alunos participando. Professor no controle — sem
+        improvisar.
       </p>
-    </div>
-  </section>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.tiktok.com/embed/v2/7536385547774774533?autoplay=1&loop=1"
+          allowfullscreen
+          allow="autoplay; encrypted-media"
+          style="width: 100%; height: 740px; border: none"
+        ></iframe>
+      </div>
+    </section>
 
-  <!-- SEÇÃO VÍDEO TIKTOK -->
-  <section class="secao-video">
-    <div class="video-label">👇 Veja como é na prática</div>
-    <h2 class="video-titulo">É <span>assim</span> que sua aula<br />vai ficar</h2>
-    <p class="video-desc">Engajamento de verdade. Alunos participando. Professor no controle — sem improvisar.</p>
-    <div class="video-wrapper">
-      <iframe
-        src="https://www.tiktok.com/embed/v2/7536385547774774533?autoplay=1&loop=1"
-        allowfullscreen
-        allow="autoplay; encrypted-media"
-        style="width:100%; height:740px; border:none;"
-      ></iframe>
-    </div>
-  </section>
-
-  <!-- CTA PRINCIPAL -->
-  <section class="secao-cta">
-    <p class="preco-ancora">De R$ 47,00</p>
-    <div class="preco-real"><span>R$</span>9<span>,90</span></div>
-    <p class="preco-detalhe">Pagamento único • Acesso imediato • PDF para baixar</p>
-    <a href="https://pay.kiwify.com.br/alX4LmY" class="btn-cta" target="_blank" rel="noopener">APROVEITAR OFERTA AGORA</a>
-    <p class="cta-seguro">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-      Compra 100% segura • Garantia de 7 dias
-    </p>
-  </section>
-
-  <!-- DOR / IDENTIFICAÇÃO -->
-  <section class="secao-dor">
-    <div class="container">
-      <h2 class="secao-titulo">Você se identifica<br /><span>com alguma dessas?</span></h2>
-      <p class="secao-subtitulo">Se respondeu sim pra pelo menos uma, esse guia foi feito pra você.</p>
-      <ul class="dor-lista">
-        <li><span class="emoji">😩</span>Chega domingo à noite e ainda não sabe o que vai fazer na aula de segunda</li>
-        <li><span class="emoji">🥱</span>Usa sempre as mesmas atividades e percebe que a turma já está cansada</li>
-        <li><span class="emoji">😬</span>Fica com medo de tentar dinâmica nova e a aula virar bagunça sem controle</li>
-        <li><span class="emoji">📚</span>Passa horas no Google tentando achar algo novo e não encontra nada completo</li>
-        <li><span class="emoji">😔</span>Sente que poderia engajar mais os alunos, mas falta repertório pra isso</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- O QUE É -->
-  <section class="secao-produto">
-    <div class="produto-badge">O que você vai receber</div>
-    <h2>50 Dinâmicas de<br />Educação Física</h2>
-    <p>
-      Um guia completo e direto ao ponto com 50 dinâmicas estruturadas para professores de Ed. Física do ensino fundamental ao médio. Cada atividade vem com objetivo pedagógico, passo a passo, tempo estimado, material necessário, dica prática e variações inclusivas.
-    </p>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-num">50</div>
-        <div class="stat-desc">Dinâmicas prontas</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">6</div>
-        <div class="stat-desc">Categorias</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">14</div>
-        <div class="stat-desc">Anos letivos</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">0</div>
-        <div class="stat-desc">Horas de preparo</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CATEGORIAS -->
-  <section class="secao-categorias">
-    <div class="container">
-      <h2 class="secao-titulo text-center">O que está<br /><span>dentro do guia</span></h2>
-      <p class="secao-subtitulo">6 categorias cobrindo todas as faixas etárias e objetivos pedagógicos.</p>
-    </div>
-    <div class="categorias-grid">
-      <div class="cat-card">
-        <div class="cat-icone">🤸</div>
-        <div class="cat-titulo">Coordenação e Equilíbrio</div>
-        <div class="cat-info">1.º ao 3.º ano • 10 dinâmicas</div>
-        <div class="cat-desc">Controle motor, propriocepção e consciência corporal com zero material ou quase nenhum.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icone">🤝</div>
-        <div class="cat-titulo">Cooperação e Equipe</div>
-        <div class="cat-info">3.º ao 6.º ano • 10 dinâmicas</div>
-        <div class="cat-desc">Colaboração, comunicação e confiança dentro e fora da quadra.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icone">⚡</div>
-        <div class="cat-titulo">Velocidade e Raciocínio</div>
-        <div class="cat-info">5.º ao 9.º ano • 10 dinâmicas</div>
-        <div class="cat-desc">Agilidade física combinada com pensamento rápido — perfeito para o Fundamental II.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icone">🎭</div>
-        <div class="cat-titulo">Expressão Corporal e Ritmo</div>
-        <div class="cat-info">1.º ao 9.º ano • 10 dinâmicas</div>
-        <div class="cat-desc">Autoconfiança, ritmo e consciência emocional para qualquer faixa etária.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icone">💪</div>
-        <div class="cat-titulo">Condicionamento Lúdico</div>
-        <div class="cat-info">6.º ao 9.º ano • 10 dinâmicas</div>
-        <div class="cat-desc">Circuitos e desafios que parecem brincadeira, mas são treino de verdade.</div>
-      </div>
-      <div class="cat-card">
-        <div class="cat-icone">🏐</div>
-        <div class="cat-titulo">Jogos Esportivos Adaptados</div>
-        <div class="cat-info">Ensino Médio • 10 dinâmicas</div>
-        <div class="cat-desc">Esportes reais com regras que incluem todos e elevam o nível tático da turma.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROVA SOCIAL -->
-  <section class="secao-prova">
-    <div class="container">
-      <h2 class="secao-titulo text-center">Professores que já <span>usaram</span></h2>
-      <p class="secao-subtitulo">Resultados reais de quem aplicou as dinâmicas na prática.</p>
-    </div>
-    <div class="depoimentos-grid">
-      <div class="depo-card">
-        <div class="estrelas">★★★★★</div>
-        <p class="depo-texto">"Apliquei a Estátua Maluca no 2.º ano e a turma ficou mais engajada do que qualquer aula que eu já dei. Simples, rápida e eficiente."</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">M</div>
-          <div>
-            <div class="depo-nome">Marcos A.</div>
-            <div class="depo-cargo">Prof. Ed. Física • SP</div>
-          </div>
-        </div>
-      </div>
-      <div class="depo-card">
-        <div class="estrelas">★★★★★</div>
-        <p class="depo-texto">"Finalmente um material completo. Cada dinâmica já vem com objetivo, passo a passo e variação. Acabou aquela busca sofrida no Google."</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">C</div>
-          <div>
-            <div class="depo-nome">Camila R.</div>
-            <div class="depo-cargo">Prof. Ed. Física • MG</div>
-          </div>
-        </div>
-      </div>
-      <div class="depo-card">
-        <div class="estrelas">★★★★★</div>
-        <p class="depo-texto">"O Circuito Explosivo salvou minhas aulas do 8.º ano. Os alunos pediram pra repetir na semana seguinte. Isso nunca tinha acontecido."</p>
-        <div class="depo-autor">
-          <div class="depo-avatar">R</div>
-          <div>
-            <div class="depo-nome">Rafael T.</div>
-            <div class="depo-cargo">Prof. Ed. Física • BA</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUEBRA DE OBJEÇÃO -->
-  <section class="secao-objecao">
-    <div class="container">
-      <h2 class="secao-titulo text-center">Como funciona<br /><span>na prática</span></h2>
-      <p class="secao-subtitulo">Em 3 passos você já está usando as dinâmicas na sua turma.</p>
-    </div>
-    <div class="objecao-lista">
-      <div class="objecao-item">
-        <div class="objecao-step">1</div>
-        <div>
-          <div class="objecao-titulo">Compre e acesse imediatamente</div>
-          <p class="objecao-texto">Após o pagamento você recebe o link do PDF na hora. Sem esperar e-mail, sem cadastro complicado.</p>
-        </div>
-      </div>
-      <div class="objecao-item">
-        <div class="objecao-step">2</div>
-        <div>
-          <div class="objecao-titulo">Escolha a dinâmica certa pelo sumário</div>
-          <p class="objecao-texto">Cada dinâmica indica faixa etária, tempo e material. Você encontra o que precisa em menos de 1 minuto.</p>
-        </div>
-      </div>
-      <div class="objecao-item">
-        <div class="objecao-step">3</div>
-        <div>
-          <div class="objecao-titulo">Aplique sem improvisar</div>
-          <p class="objecao-texto">Passo a passo detalhado, dica do professor e variação inclusiva em cada atividade. Você chega na aula com tudo na cabeça.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BÔNUS -->
-  <section class="secao-bonus">
-    <div class="container">
-      <h2 class="secao-titulo">Tudo que você leva<br /><span>por esse preço</span></h2>
-      <p class="secao-subtitulo">Além do guia principal, você ainda recebe esses bônus sem custo adicional.</p>
-    </div>
-    <div class="bonus-grid">
-      <div class="bonus-card">
-        <div class="bonus-tag">Principal</div>
-        <div class="bonus-titulo">50 Dinâmicas de Ed. Física — Guia Completo</div>
-        <div class="bonus-desc">PDF com todas as 50 dinâmicas estruturadas, 6 categorias, do 1.º ano ao Ensino Médio.</div>
-        <div class="bonus-valor">R$ 47,00</div>
-      </div>
-      <div class="bonus-card">
-        <div class="bonus-tag">Bônus 1</div>
-        <div class="bonus-titulo">Calendário Semanal de Dinâmicas</div>
-        <div class="bonus-desc">Modelo pronto para organizar sua semana letiva com variedade de atividades sem repetir.</div>
-        <div class="bonus-valor">R$ 17,00</div>
-      </div>
-      <div class="bonus-card">
-        <div class="bonus-tag">Bônus 2</div>
-        <div class="bonus-titulo">Lista de Materiais por Dinâmica</div>
-        <div class="bonus-desc">Planilha rápida pra você saber o que separar antes de cada aula. Sem improvisar material.</div>
-        <div class="bonus-valor">R$ 9,00</div>
-      </div>
-    </div>
-    <div class="ancora-total">
-      <div class="ancora-linha">
-        <span class="nome">Guia 50 Dinâmicas</span>
-        <span class="val">R$ 47,00</span>
-      </div>
-      <div class="ancora-linha">
-        <span class="nome">Bônus 1 — Calendário Semanal</span>
-        <span class="val">R$ 17,00</span>
-      </div>
-      <div class="ancora-linha">
-        <span class="nome">Bônus 2 — Lista de Materiais</span>
-        <span class="val">R$ 9,00</span>
-      </div>
-      <div class="ancora-total-linha">
-        <span class="label">HOJE TUDO POR:</span>
-        <span class="preco-final">R$ 9,90</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="secao-cta-final">
-    <h2>Sua próxima aula<br />pode ser diferente</h2>
-    <p>50 dinâmicas. Passo a passo completo. Acesso imediato. Tudo por menos que um lanche.</p>
-    <a href="https://pay.kiwify.com.br/alX4LmY" class="btn-cta" target="_blank" rel="noopener">APROVEITAR OFERTA AGORA</a>
-    <p class="cta-seguro mt-md">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-      Pagamento seguro • Acesso imediato • Garantia de 7 dias
-    </p>
-  </section>
-
-  <!-- GARANTIA -->
-  <section class="secao-garantia">
-    <div class="garantia-box">
-      <div class="garantia-icone">🛡️</div>
-      <div class="garantia-titulo">Garantia de 7 dias</div>
-      <p class="garantia-texto">
-        Se você comprar, acessar o material e achar que não vale o que pagou — é só mandar uma mensagem e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso.
+    <!-- CTA PRINCIPAL -->
+    <section class="secao-cta">
+      <p class="preco-ancora">De R$ 47,00</p>
+      <div class="preco-real"><span>R$</span>9<span>,90</span></div>
+      <p class="preco-detalhe">
+        Pagamento único • Acesso imediato • PDF para baixar
       </p>
-    </div>
-  </section>
+      <a
+        href="https://pay.kiwify.com.br/alX4LmY"
+        class="btn-cta"
+        target="_blank"
+        rel="noopener"
+        >APROVEITAR OFERTA AGORA</a
+      >
+      <p class="cta-seguro">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <rect x="3" y="11" width="18" height="11" rx="2" />
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        </svg>
+        Compra 100% segura • Garantia de 7 dias
+      </p>
+    </section>
 
-  <!-- FAQ -->
-  <section class="secao-faq">
-    <div class="container">
-      <h2 class="secao-titulo text-center">Dúvidas<br /><span>frequentes</span></h2>
-    </div>
-    <div class="faq-lista">
-      <details>
-        <summary>Como vou receber o material após a compra?</summary>
-        <p class="faq-resp">Imediatamente após o pagamento confirmado, você recebe o link de acesso por e-mail. É um PDF que você baixa e guarda no celular ou computador para sempre.</p>
-      </details>
-      <details>
-        <summary>Funciona para qual nível escolar?</summary>
-        <p class="faq-resp">O guia cobre do 1.º ano do Ensino Fundamental até o 3.º ano do Ensino Médio. Cada dinâmica indica claramente para qual faixa etária é indicada.</p>
-      </details>
-      <details>
-        <summary>Precisa de muito material para as dinâmicas?</summary>
-        <p class="faq-resp">A maioria das dinâmicas usa material mínimo ou nenhum. Onde há necessidade, o guia indica exatamente o que preparar com antecedência.</p>
-      </details>
-      <details>
-        <summary>Funciona só para professores de Ed. Física?</summary>
-        <p class="faq-resp">As dinâmicas foram pensadas para aulas de Educação Física, mas professores de outras disciplinas que fazem atividades de integração e movimento também se beneficiam muito.</p>
-      </details>
-      <details>
-        <summary>Consigo usar no mesmo dia que comprar?</summary>
-        <p class="faq-resp">Sim. O acesso é imediato e cada dinâmica tem passo a passo simples — você consegue aplicar já na próxima aula sem precisar estudar nada antes.</p>
-      </details>
-    </div>
-  </section>
+    <!-- DOR / IDENTIFICAÇÃO -->
+    <section class="secao-dor">
+      <div class="container">
+        <h2 class="secao-titulo">
+          Você se identifica<br /><span>com alguma dessas?</span>
+        </h2>
+        <p class="secao-subtitulo">
+          Se respondeu sim pra pelo menos uma, esse guia foi feito pra você.
+        </p>
+        <ul class="dor-lista">
+          <li>
+            <span class="emoji">😩</span>Chega domingo à noite e ainda não sabe
+            o que vai fazer na aula de segunda
+          </li>
+          <li>
+            <span class="emoji">🥱</span>Usa sempre as mesmas atividades e
+            percebe que a turma já está cansada
+          </li>
+          <li>
+            <span class="emoji">😬</span>Fica com medo de tentar dinâmica nova e
+            a aula virar bagunça sem controle
+          </li>
+          <li>
+            <span class="emoji">📚</span>Passa horas no Google tentando achar
+            algo novo e não encontra nada completo
+          </li>
+          <li>
+            <span class="emoji">😔</span>Sente que poderia engajar mais os
+            alunos, mas falta repertório pra isso
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2025 — 50 Dinâmicas de Educação Física. Todos os direitos reservados.</p>
-    <p class="mt-sm"><a href="#">Política de Privacidade</a> &nbsp;·&nbsp; <a href="#">Termos de Uso</a> &nbsp;·&nbsp; <a href="#">Suporte</a></p>
-  </footer>
+    <!-- O QUE É -->
+    <section class="secao-produto">
+      <div class="produto-badge">O que você vai receber</div>
+      <h2>50 Dinâmicas de<br />Educação Física</h2>
+      <p>
+        Um guia completo e direto ao ponto com 50 dinâmicas estruturadas para
+        professores de Ed. Física do ensino fundamental ao médio. Cada atividade
+        vem com objetivo pedagógico, passo a passo, tempo estimado, material
+        necessário, dica prática e variações inclusivas.
+      </p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">50</div>
+          <div class="stat-desc">Dinâmicas prontas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6</div>
+          <div class="stat-desc">Categorias</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">14</div>
+          <div class="stat-desc">Anos letivos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">0</div>
+          <div class="stat-desc">Horas de preparo</div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- CATEGORIAS -->
+    <section class="secao-categorias">
+      <div class="container">
+        <h2 class="secao-titulo text-center">
+          O que está<br /><span>dentro do guia</span>
+        </h2>
+        <p class="secao-subtitulo">
+          6 categorias cobrindo todas as faixas etárias e objetivos pedagógicos.
+        </p>
+      </div>
+      <div class="categorias-grid">
+        <div class="cat-card">
+          <div class="cat-icone">🤸</div>
+          <div class="cat-titulo">Coordenação e Equilíbrio</div>
+          <div class="cat-info">1.º ao 3.º ano • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Controle motor, propriocepção e consciência corporal com zero
+            material ou quase nenhum.
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icone">🤝</div>
+          <div class="cat-titulo">Cooperação e Equipe</div>
+          <div class="cat-info">3.º ao 6.º ano • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Colaboração, comunicação e confiança dentro e fora da quadra.
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icone">⚡</div>
+          <div class="cat-titulo">Velocidade e Raciocínio</div>
+          <div class="cat-info">5.º ao 9.º ano • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Agilidade física combinada com pensamento rápido — perfeito para o
+            Fundamental II.
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icone">🎭</div>
+          <div class="cat-titulo">Expressão Corporal e Ritmo</div>
+          <div class="cat-info">1.º ao 9.º ano • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Autoconfiança, ritmo e consciência emocional para qualquer faixa
+            etária.
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icone">💪</div>
+          <div class="cat-titulo">Condicionamento Lúdico</div>
+          <div class="cat-info">6.º ao 9.º ano • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Circuitos e desafios que parecem brincadeira, mas são treino de
+            verdade.
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-icone">🏐</div>
+          <div class="cat-titulo">Jogos Esportivos Adaptados</div>
+          <div class="cat-info">Ensino Médio • 10 dinâmicas</div>
+          <div class="cat-desc">
+            Esportes reais com regras que incluem todos e elevam o nível tático
+            da turma.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section class="secao-prova">
+      <div class="container">
+        <h2 class="secao-titulo text-center">
+          Professores que já <span>usaram</span>
+        </h2>
+        <p class="secao-subtitulo">
+          Resultados reais de quem aplicou as dinâmicas na prática.
+        </p>
+      </div>
+      <div class="depoimentos-grid">
+        <div class="depo-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="depo-texto">
+            "Apliquei a Estátua Maluca no 2.º ano e a turma ficou mais engajada
+            do que qualquer aula que eu já dei. Simples, rápida e eficiente."
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">M</div>
+            <div>
+              <div class="depo-nome">Marcos A.</div>
+              <div class="depo-cargo">Prof. Ed. Física • SP</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="depo-texto">
+            "Finalmente um material completo. Cada dinâmica já vem com objetivo,
+            passo a passo e variação. Acabou aquela busca sofrida no Google."
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">C</div>
+            <div>
+              <div class="depo-nome">Camila R.</div>
+              <div class="depo-cargo">Prof. Ed. Física • MG</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="estrelas">★★★★★</div>
+          <p class="depo-texto">
+            "O Circuito Explosivo salvou minhas aulas do 8.º ano. Os alunos
+            pediram pra repetir na semana seguinte. Isso nunca tinha
+            acontecido."
+          </p>
+          <div class="depo-autor">
+            <div class="depo-avatar">R</div>
+            <div>
+              <div class="depo-nome">Rafael T.</div>
+              <div class="depo-cargo">Prof. Ed. Física • BA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEBRA DE OBJEÇÃO -->
+    <section class="secao-objecao">
+      <div class="container">
+        <h2 class="secao-titulo text-center">
+          Como funciona<br /><span>na prática</span>
+        </h2>
+        <p class="secao-subtitulo">
+          Em 3 passos você já está usando as dinâmicas na sua turma.
+        </p>
+      </div>
+      <div class="objecao-lista">
+        <div class="objecao-item">
+          <div class="objecao-step">1</div>
+          <div>
+            <div class="objecao-titulo">Compre e acesse imediatamente</div>
+            <p class="objecao-texto">
+              Após o pagamento você recebe o link do PDF na hora. Sem esperar
+              e-mail, sem cadastro complicado.
+            </p>
+          </div>
+        </div>
+        <div class="objecao-item">
+          <div class="objecao-step">2</div>
+          <div>
+            <div class="objecao-titulo">
+              Escolha a dinâmica certa pelo sumário
+            </div>
+            <p class="objecao-texto">
+              Cada dinâmica indica faixa etária, tempo e material. Você encontra
+              o que precisa em menos de 1 minuto.
+            </p>
+          </div>
+        </div>
+        <div class="objecao-item">
+          <div class="objecao-step">3</div>
+          <div>
+            <div class="objecao-titulo">Aplique sem improvisar</div>
+            <p class="objecao-texto">
+              Passo a passo detalhado, dica do professor e variação inclusiva em
+              cada atividade. Você chega na aula com tudo na cabeça.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÔNUS -->
+    <section class="secao-bonus">
+      <div class="container">
+        <h2 class="secao-titulo">
+          Tudo que você leva<br /><span>por esse preço</span>
+        </h2>
+        <p class="secao-subtitulo">
+          Além do guia principal, você ainda recebe esses bônus sem custo
+          adicional.
+        </p>
+      </div>
+      <div class="bonus-grid">
+        <div class="bonus-card">
+          <div class="bonus-tag">Principal</div>
+          <div class="bonus-titulo">
+            50 Dinâmicas de Ed. Física — Guia Completo
+          </div>
+          <div class="bonus-desc">
+            PDF com todas as 50 dinâmicas estruturadas, 6 categorias, do 1.º ano
+            ao Ensino Médio.
+          </div>
+          <div class="bonus-valor">R$ 47,00</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-tag">Bônus 1</div>
+          <div class="bonus-titulo">Calendário Semanal de Dinâmicas</div>
+          <div class="bonus-desc">
+            Modelo pronto para organizar sua semana letiva com variedade de
+            atividades sem repetir.
+          </div>
+          <div class="bonus-valor">R$ 17,00</div>
+        </div>
+        <div class="bonus-card">
+          <div class="bonus-tag">Bônus 2</div>
+          <div class="bonus-titulo">Lista de Materiais por Dinâmica</div>
+          <div class="bonus-desc">
+            Planilha rápida pra você saber o que separar antes de cada aula. Sem
+            improvisar material.
+          </div>
+          <div class="bonus-valor">R$ 9,00</div>
+        </div>
+      </div>
+      <div class="ancora-total">
+        <div class="ancora-linha">
+          <span class="nome">Guia 50 Dinâmicas</span>
+          <span class="val">R$ 47,00</span>
+        </div>
+        <div class="ancora-linha">
+          <span class="nome">Bônus 1 — Calendário Semanal</span>
+          <span class="val">R$ 17,00</span>
+        </div>
+        <div class="ancora-linha">
+          <span class="nome">Bônus 2 — Lista de Materiais</span>
+          <span class="val">R$ 9,00</span>
+        </div>
+        <div class="ancora-total-linha">
+          <span class="label">HOJE TUDO POR:</span>
+          <span class="preco-final">R$ 9,90</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="secao-cta-final">
+      <h2>Sua próxima aula<br />pode ser diferente</h2>
+      <p>
+        50 dinâmicas. Passo a passo completo. Acesso imediato. Tudo por menos
+        que um lanche.
+      </p>
+      <a
+        href="https://pay.kiwify.com.br/alX4LmY"
+        class="btn-cta"
+        target="_blank"
+        rel="noopener"
+        >APROVEITAR OFERTA AGORA</a
+      >
+      <p class="cta-seguro mt-md">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+        >
+          <rect x="3" y="11" width="18" height="11" rx="2" />
+          <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        </svg>
+        Pagamento seguro • Acesso imediato • Garantia de 7 dias
+      </p>
+    </section>
+
+    <!-- GARANTIA -->
+    <section class="secao-garantia">
+      <div class="garantia-box">
+        <div class="garantia-icone">🛡️</div>
+        <div class="garantia-titulo">Garantia de 7 dias</div>
+        <p class="garantia-texto">
+          Se você comprar, acessar o material e achar que não vale o que pagou —
+          é só mandar uma mensagem e devolvemos 100% do seu dinheiro. Sem
+          perguntas, sem burocracia. O risco é todo nosso.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="secao-faq">
+      <div class="container">
+        <h2 class="secao-titulo text-center">
+          Dúvidas<br /><span>frequentes</span>
+        </h2>
+      </div>
+      <div class="faq-lista">
+        <details>
+          <summary>Como vou receber o material após a compra?</summary>
+          <p class="faq-resp">
+            Imediatamente após o pagamento confirmado, você recebe o link de
+            acesso por e-mail. É um PDF que você baixa e guarda no celular ou
+            computador para sempre.
+          </p>
+        </details>
+        <details>
+          <summary>Funciona para qual nível escolar?</summary>
+          <p class="faq-resp">
+            O guia cobre do 1.º ano do Ensino Fundamental até o 3.º ano do
+            Ensino Médio. Cada dinâmica indica claramente para qual faixa etária
+            é indicada.
+          </p>
+        </details>
+        <details>
+          <summary>Precisa de muito material para as dinâmicas?</summary>
+          <p class="faq-resp">
+            A maioria das dinâmicas usa material mínimo ou nenhum. Onde há
+            necessidade, o guia indica exatamente o que preparar com
+            antecedência.
+          </p>
+        </details>
+        <details>
+          <summary>Funciona só para professores de Ed. Física?</summary>
+          <p class="faq-resp">
+            As dinâmicas foram pensadas para aulas de Educação Física, mas
+            professores de outras disciplinas que fazem atividades de integração
+            e movimento também se beneficiam muito.
+          </p>
+        </details>
+        <details>
+          <summary>Consigo usar no mesmo dia que comprar?</summary>
+          <p class="faq-resp">
+            Sim. O acesso é imediato e cada dinâmica tem passo a passo simples —
+            você consegue aplicar já na próxima aula sem precisar estudar nada
+            antes.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>
+        © 2025 — 50 Dinâmicas de Educação Física. Todos os direitos reservados.
+      </p>
+      <p class="mt-sm">
+        <a href="#">Política de Privacidade</a> &nbsp;·&nbsp;
+        <a href="#">Termos de Uso</a> &nbsp;·&nbsp; <a href="#">Suporte</a>
+      </p>
+    </footer>
+  </body>
 </html>
