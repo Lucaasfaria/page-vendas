@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://www.tiktok.com" />
+    <link rel="preload" as="image" fetchpriority="high" href="./50.png" />
+    <link rel="preload" as="image" fetchpriority="high" href="./30.png" />
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -860,18 +863,10 @@
         </p>
         <div class="ebook-pair">
           <div class="ebook-wrap">
-            <img 
-              src="./50.png" 
-              alt="50 Dinâmicas de Educação Física"
-              class="ebook-mockup-img"
-            />
+            <img src="./50.png" alt="50 Dinâmicas de Educação Física" class="ebook-mockup-img" fetchpriority="high" decoding="async" />
           </div>
           <div class="ebook-wrap bonus">
-            <img 
-              src="./30.png" 
-              alt="30 Dinâmicas Sem Quadra — Bônus Gratuito"
-              class="ebook-mockup-img"
-            />
+            <img src="./30.png" alt="30 Dinâmicas Sem Quadra — Bônus Gratuito" class="ebook-mockup-img" fetchpriority="high" decoding="async" />
           </div>
         
         </div>
@@ -905,6 +900,8 @@
           allowfullscreen
           allow="autoplay; encrypted-media"
           style="width: 100%; height: 740px; border: none"
+          loading="lazy"
+          title="Video demonstrativo da aula no TikTok"
         ></iframe>
       </div>
     </section>
@@ -976,13 +973,23 @@
     <!-- O QUE É -->
     <section class="secao-produto">
       <div class="produto-badge">O que você vai receber</div>
-      <h2>50 Dinâmicas de<br />Educação Física</h2>
+            <h2>50 Dinâmicas de<br />Educação Física<br /><span style="font-size:0.7em; color:var(--laranja);">+ E-book 30 Dinâmicas Sem Quadra de Bônus</span></h2>
       <p>
         Um guia completo e direto ao ponto com 50 dinâmicas estruturadas para
-        professores de Ed. Física do ensino fundamental ao médio. Cada atividade
+        professores de Ed. Física do ensino fundamental ao médio. E como <strong>bônus gratuito</strong> incluso, você também leva atividades adaptadas para quando chover ou faltar espaço! Cada atividade
         vem com objetivo pedagógico, passo a passo, tempo estimado, material
         necessário, dica prática e variações inclusivas.
       </p>
+      
+      <div class="ebook-pair" style="margin-bottom: 40px;">
+        <div class="ebook-wrap">
+          <img src="./50.png" alt="50 Dinâmicas de Educação Física" class="ebook-mockup-img" loading="lazy" decoding="async" />
+        </div>
+        <div class="ebook-wrap bonus">
+          <img src="./30.png" alt="30 Dinâmicas Sem Quadra — Bônus Gratuito" class="ebook-mockup-img" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-num">50</div>
