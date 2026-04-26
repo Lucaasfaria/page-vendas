@@ -139,18 +139,21 @@
       justify-content: center;
       gap: 0;
       position: relative;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      padding: 0 10px;
     }
     .mockup-img {
-      width: 48%;
-      max-width: 220px;
-      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+      width: 70%;
+      max-width: 320px;
+      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.35));
       transition: transform 0.3s;
     }
-    .mockup-img:hover { transform: translateY(-6px); }
+    .mockup-img:hover { transform: translateY(-8px); }
     .mockup-img.bonus {
-      margin-left: -30px;
-      margin-bottom: -16px;
+      width: 50%;
+      max-width: 230px;
+      margin-left: -40px;
+      margin-bottom: -20px;
     }
     .plus-sinal {
       font-family: 'Bebas Neue', sans-serif;
@@ -429,6 +432,126 @@
       50% { box-shadow: 0 8px 50px rgba(0,0,0,0.4); }
     }
 
+    /* ── PROVA SOCIAL WHATSAPP ── */
+    .secao-prova {
+      background: #e5ede9;
+      padding: 40px 20px;
+    }
+    .prova-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .prova-titulo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.6rem, 5.5vw, 2.4rem);
+      color: var(--verde-escuro);
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+    .prova-sub {
+      font-size: clamp(0.88rem, 2.8vw, 1rem);
+      font-weight: 600;
+      color: #4a5e52;
+      max-width: 440px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .wpp-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      max-width: 640px;
+      margin: 0 auto 32px;
+    }
+    @media (min-width: 600px) {
+      .wpp-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .wpp-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px 16px 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      position: relative;
+    }
+    /* bolha de mensagem recebida */
+    .wpp-card::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: -10px;
+      border-width: 8px 10px 8px 0;
+      border-style: solid;
+      border-color: transparent #fff transparent transparent;
+    }
+    .wpp-remetente {
+      font-size: 0.78rem;
+      font-weight: 900;
+      color: var(--verde);
+      margin-bottom: 6px;
+      letter-spacing: 0.01em;
+    }
+    .wpp-texto {
+      font-size: clamp(0.9rem, 2.8vw, 0.97rem);
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .wpp-rodape {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+    .wpp-hora {
+      font-size: 0.7rem;
+      color: #999;
+      font-weight: 600;
+    }
+    /* check duplo WhatsApp */
+    .wpp-check {
+      display: inline-flex;
+      gap: 1px;
+    }
+    .wpp-check span {
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #4fc3f7;
+      border-bottom: 2px solid #4fc3f7;
+      transform: rotate(45deg) translate(-1px, -1px);
+      display: inline-block;
+    }
+    .wpp-check span:first-child { margin-right: -4px; }
+    .prova-reforco {
+      text-align: center;
+      font-size: clamp(0.95rem, 3vw, 1.05rem);
+      font-weight: 700;
+      color: #2c4a38;
+      margin-bottom: 20px;
+    }
+    .btn-cta-prova {
+      display: block;
+      background: var(--amarelo);
+      color: var(--preto);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: clamp(0.95rem, 3.5vw, 1.15rem);
+      padding: 18px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      max-width: 420px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0 6px 24px rgba(245,197,24,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-cta-prova:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(245,197,24,0.6);
+    }
+
     /* ── RODAPÉ ── */
     footer {
       background: #111;
@@ -561,6 +684,75 @@
         <div class="seg-label">Acesso<br/>imediato</div>
       </div>
     </div>
+  </section>
+
+  <!-- PROVA SOCIAL WHATSAPP -->
+  <section class="secao-prova">
+    <div class="prova-header">
+      <div class="prova-titulo">Professores que já usam estão gostando 👇</div>
+      <p class="prova-sub">Veja alguns feedbacks de quem já começou a aplicar as dinâmicas nas aulas.</p>
+    </div>
+
+    <div class="wpp-grid">
+
+      <!-- Card 1 -->
+      <div class="wpp-card">
+        <div class="wpp-remetente">Prof. Mariana — Ensino Fundamental</div>
+        <p class="wpp-texto">"Eu sempre perdia tempo pensando no que fazer quando a quadra estava ocupada. O bônus de dinâmicas sem quadra já salvou minha aula."</p>
+        <div class="wpp-rodape">
+          <span class="wpp-hora">09:42</span>
+          <svg class="wpp-check" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 5L4.5 8.5L10.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L8.5 8.5L14.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="wpp-card">
+        <div class="wpp-remetente">Prof. Carlos — Ensino Médio</div>
+        <p class="wpp-texto">"Gostei porque é direto ao ponto. Não tem enrolação, é abrir, escolher a dinâmica e aplicar. Funcionou muito bem com minha turma."</p>
+        <div class="wpp-rodape">
+          <span class="wpp-hora">14:18</span>
+          <svg class="wpp-check" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 5L4.5 8.5L10.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L8.5 8.5L14.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="wpp-card">
+        <div class="wpp-remetente">Prof. Renata — Escola Pública</div>
+        <p class="wpp-texto">"Uso com turmas diferentes e consigo adaptar fácil. Me ajudou muito na organização das aulas durante a semana."</p>
+        <div class="wpp-rodape">
+          <span class="wpp-hora">20:07</span>
+          <svg class="wpp-check" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 5L4.5 8.5L10.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L8.5 8.5L14.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="wpp-card">
+        <div class="wpp-remetente">Prof. Fábio — Ensino Fundamental II</div>
+        <p class="wpp-texto">"Pelo valor, valeu demais. Só a lista de ideias já economizou muito tempo de planejamento. Recomendo sem hesitar."</p>
+        <div class="wpp-rodape">
+          <span class="wpp-hora">11:33</span>
+          <svg class="wpp-check" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 5L4.5 8.5L10.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 5L8.5 8.5L14.5 1.5" stroke="#4fc3f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+    </div><!-- /wpp-grid -->
+
+    <p class="prova-reforco">✅ Você também pode começar hoje com acesso imediato.</p>
+    <a href="https://pay.kiwify.com.br/alX4LmY" id="btn-cta-prova" class="btn-cta-prova" target="_blank" rel="noopener">
+      👉 QUERO ACESSO AGORA POR R$9,90
+    </a>
   </section>
 
   <!-- PREÇO + CTA -->
