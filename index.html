@@ -592,7 +592,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-alerta">
-      ⚠️ PROFESSOR DO ENSINO MÉDIO, PARE DE IMPROVISAR SUAS AULAS!
+      ⚠️ PROFESSOR, PARE DE IMPROVISAR SUAS AULAS!
     </div>
     <div class="hero-body">
       <h1>
@@ -619,69 +619,86 @@
 
   <!-- APRESENTAÇÃO DA OFERTA -->
   <section class="secao-oferta">
-    <div class="container">
-      <div class="oferta-label">130 dinâmicas + 3 bônus gratuitos</div>
+    <div class="container" style="max-width:600px;">
 
-      <div class="mockups-wrapper" style="flex-direction:column; gap:24px;">
-        <div style="display:flex; justify-content:center; gap:24px; flex-wrap:wrap;">
-          <div style="display:flex; flex-direction:column; align-items:center; gap:10px; flex:1; min-width:140px; max-width:240px;">
-            <img src="./mock1.png" alt="100 Dinâmicas Avançadas — Incluindo Ensino Médio" class="mockup-img" style="width:100%; max-width:240px;" fetchpriority="high" decoding="async" />
-            <p style="font-size:0.85rem; font-weight:800; color:#333; text-align:center; line-height:1.4;">100 Dinâmicas Avançadas — Incluindo Ensino Médio</p>
-          </div>
-          <div style="display:flex; flex-direction:column; align-items:center; gap:10px; flex:1; min-width:140px; max-width:240px;">
-            <img src="./moc2.png" alt="30 Dinâmicas para Fazer Sem Precisar de Quadra" class="mockup-img" style="width:100%; max-width:240px;" fetchpriority="high" decoding="async" />
-            <p style="font-size:0.85rem; font-weight:800; color:#333; text-align:center; line-height:1.4;">30 Dinâmicas para Fazer Sem Precisar de Quadra</p>
-          </div>
-        </div>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:clamp(1.2rem,4vw,1.6rem); color:var(--verde); letter-spacing:0.03em; text-align:center;">🎁 Compre 1 e leve 2 materiais completos</div>
+      <!-- Label topo -->
+      <div class="oferta-label" style="font-size:1rem; padding:10px 28px; margin-bottom:36px;">
+        🎁 130 Dinâmicas + 2 Bônus Gratuitos
       </div>
 
-      <div class="bonus-selo">🎁 BÔNUS GRATUITOS INCLUÍDOS</div>
-      <div class="oferta-frase">130 DINÂMICAS + 3 BÔNUS — TUDO EM UM SÓ LUGAR</div>
+      <!-- Mockups lado a lado, maiores -->
+      <div style="display:flex; justify-content:center; align-items:flex-start; gap:20px; flex-wrap:wrap; margin-bottom:16px;">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:12px; flex:1; min-width:160px; max-width:280px;">
+          <img src="./mock1.png" alt="100 Dinâmicas Avançadas — Incluindo Ensino Médio"
+            style="width:100%; max-width:280px; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3)); transition:transform 0.3s;"
+            onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''"
+            fetchpriority="high" decoding="async" />
+          <p style="font-size:0.88rem; font-weight:800; color:#1B7A3E; text-align:center; line-height:1.4; background:#e8f5ee; border-radius:8px; padding:8px 12px; width:100%;">
+            📘 100 Dinâmicas Avançadas<br/>Incluindo Ensino Médio
+          </p>
+        </div>
 
-      <div class="produtos-labels">
-        <div class="prod-item">
-          <span class="prod-badge principal">Principal</span>
-          <span>130 Dinâmicas de Educação Física</span>
+        <div style="display:flex; align-items:center; justify-content:center; padding-top:80px;">
+          <span style="font-family:'Bebas Neue',sans-serif; font-size:2.5rem; color:var(--vermelho); background:#fff; border:3px solid var(--vermelho); border-radius:50%; width:50px; height:50px; display:flex; align-items:center; justify-content:center;">+</span>
         </div>
-        <div class="prod-plus">↳</div>
-        <div class="prod-item" style="margin-left:12px; font-size:0.88rem; color:#444;">
-          <span class="prod-badge principal" style="background:#145c2e;">Destaque</span>
-          <span>50 Dinâmicas Focadas para o Ensino Médio</span>
-        </div>
-        <div class="prod-plus">+</div>
-        <div class="prod-item">
-          <span class="prod-badge gratis">Grátis</span>
-          <span>Calendário Semanal de Dinâmicas</span>
-        </div>
-        <div class="prod-plus">+</div>
-        <div class="prod-item">
-          <span class="prod-badge gratis">Grátis</span>
-          <span>Lista de Materiais por Semana</span>
-        </div>
-        <div class="prod-plus">+</div>
-        <div class="prod-item">
-          <span class="prod-badge gratis">Grátis</span>
-          <span>Guia de Dinâmicas Sem Quadra</span>
+
+        <div style="display:flex; flex-direction:column; align-items:center; gap:12px; flex:1; min-width:160px; max-width:280px;">
+          <img src="./moc2.png" alt="30 Dinâmicas para Fazer Sem Precisar de Quadra"
+            style="width:100%; max-width:280px; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.3)); transition:transform 0.3s;"
+            onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform=''"
+            fetchpriority="high" decoding="async" />
+          <p style="font-size:0.88rem; font-weight:800; color:#1B7A3E; text-align:center; line-height:1.4; background:#e8f5ee; border-radius:8px; padding:8px 12px; width:100%;">
+            🏃 30 Dinâmicas Sem Quadra<br/>Prontas para Qualquer Espaço
+          </p>
         </div>
       </div>
+
+      <!-- Frase de bundle -->
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:clamp(1.3rem,4.5vw,1.8rem); color:var(--verde); letter-spacing:0.04em; text-align:center; margin-bottom:32px;">
+        🎁 Compre 1 e leve 4 materiais completos
+      </div>
+
+      <!-- Lista de conteúdo organizada -->
+      <div style="background:#fff; border-radius:16px; border:2px solid #e0e0e0; padding:24px 20px; max-width:480px; margin:0 auto;">
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:1.1rem; color:#555; letter-spacing:0.06em; text-align:center; margin-bottom:16px; text-transform:uppercase;">O que você leva:</p>
+
+        <!-- Principal -->
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0;">
+          <span style="background:var(--verde); color:#fff; font-size:0.7rem; font-weight:900; text-transform:uppercase; padding:4px 12px; border-radius:100px; flex-shrink:0; letter-spacing:0.06em;">Principal</span>
+          <span style="font-size:0.97rem; font-weight:700; color:#111;">130 Dinâmicas de Educação Física</span>
+        </div>
+
+        <!-- Destaque 1 -->
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0; padding-left:16px;">
+          <span style="background:#145c2e; color:#fff; font-size:0.7rem; font-weight:900; text-transform:uppercase; padding:4px 12px; border-radius:100px; flex-shrink:0; letter-spacing:0.06em;">Destaque</span>
+          <span style="font-size:0.92rem; font-weight:700; color:#333;">100 Dinâmicas para Fundamental e Ensino Médio</span>
+        </div>
+
+        <!-- Destaque 2 -->
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0; padding-left:16px;">
+          <span style="background:#145c2e; color:#fff; font-size:0.7rem; font-weight:900; text-transform:uppercase; padding:4px 12px; border-radius:100px; flex-shrink:0; letter-spacing:0.06em;">Destaque</span>
+          <span style="font-size:0.92rem; font-weight:700; color:#333;">30 Dinâmicas para fazer sem precisar de quadra</span>
+        </div>
+
+        <!-- Separador bônus -->
+        <div style="text-align:center; margin:14px 0 10px; font-size:0.78rem; font-weight:900; color:#999; text-transform:uppercase; letter-spacing:0.08em;">+ Bônus gratuitos</div>
+
+        <!-- Bônus 1 -->
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0;">
+          <span style="background:var(--vermelho); color:#fff; font-size:0.7rem; font-weight:900; text-transform:uppercase; padding:4px 12px; border-radius:100px; flex-shrink:0; letter-spacing:0.06em;">Grátis</span>
+          <span style="font-size:0.92rem; font-weight:700; color:#333;">Calendário Semanal de Dinâmicas</span>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div style="display:flex; align-items:center; gap:10px; padding:10px 0;">
+          <span style="background:var(--vermelho); color:#fff; font-size:0.7rem; font-weight:900; text-transform:uppercase; padding:4px 12px; border-radius:100px; flex-shrink:0; letter-spacing:0.06em;">Grátis</span>
+          <span style="font-size:0.92rem; font-weight:700; color:#333;">Lista de Materiais por Semana</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- BENEFÍCIOS -->
-  <section class="secao-beneficios">
-    <div class="container">
-      <div class="beneficios-titulo">O QUE VOCÊ VAI GANHAR:</div>
-      <ul class="beneficios-lista">
-        <li><span class="check">✔</span> <strong>130 dinâmicas prontas</strong> — nunca mais improvise uma aula</li>
-        <li><span class="check">✔</span> <strong>50 dinâmicas exclusivas para o Ensino Médio</strong> — atividades certas para a sua turma</li>
-        <li><span class="check">✔</span> Economize horas de planejamento toda semana</li>
-        <li><span class="check">✔</span> Mais engajamento e participação dos alunos</li>
-        <li><span class="check">✔</span> Funciona mesmo sem quadra ou material extra</li>
-        <li><span class="check">✔</span> Conteúdo para o ano letivo inteiro do 1º ao 3º ano</li>
-      </ul>
-    </div>
-  </section>
 
   <!-- QUEBRA DE OBJEÇÃO -->
   <section class="secao-objecao">
@@ -719,7 +736,7 @@
         <li style="display:flex; align-items:flex-start; gap:12px; font-size:clamp(1rem,3.5vw,1.1rem); font-weight:700; color:#222; line-height:1.5;"><span style="font-size:1.3rem; flex-shrink:0;">✅</span> 30 dinâmicas que funcionam mesmo sem quadra disponível</li>
         <li style="display:flex; align-items:flex-start; gap:12px; font-size:clamp(1rem,3.5vw,1.1rem); font-weight:700; color:#222; line-height:1.5;"><span style="font-size:1.3rem; flex-shrink:0;">✅</span> Atividades específicas para o Ensino Médio</li>
         <li style="display:flex; align-items:flex-start; gap:12px; font-size:clamp(1rem,3.5vw,1.1rem); font-weight:700; color:#222; line-height:1.5;"><span style="font-size:1.3rem; flex-shrink:0;">✅</span> Prontas para aplicar — sem precisar adaptar nada</li>
-        <li style="display:flex; align-items:flex-start; gap:12px; font-size:clamp(1rem,3.5vw,1.1rem); font-weight:700; color:#222; line-height:1.5;"><span style="font-size:1.3rem; flex-shrink:0;">✅</span> Funciona para qualquer turma, do 6º ano ao 3º do EM</li>
+        <li style="display:flex; align-items:flex-start; gap:12px; font-size:clamp(1rem,3.5vw,1.1rem); font-weight:700; color:#222; line-height:1.5;"><span style="font-size:1.3rem; flex-shrink:0;">✅</span> Funciona para qualquer turma</li>
       </ul>
     </div>
   </section>
