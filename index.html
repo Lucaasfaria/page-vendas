@@ -7,7 +7,8 @@
   <meta name="description" content="130 dinâmicas prontas para professores de Ed. Física. PDF + PowerPoint editável. Acesso imediato." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" /></noscript>
   <!-- Meta Pixel Code -->
   <script>
     !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -598,9 +599,9 @@
           Seus alunos merecem aulas de <span class="text-blue">Educação Física</span> que realmente funcionam<br>
           — e você merece um material <span class="text-blue">pronto para aplicar</span>
         </h1>
-        <img src="./mock1.webp" alt="130 Dinâmicas de Educação Física — Mockup do produto" class="hero-mockup" loading="eager" />
+        <img src="./mock1.webp" alt="130 Dinâmicas de Educação Física — Mockup do produto" class="hero-mockup" loading="eager" fetchpriority="high" width="420" height="420" />
         <div style="font-size:2.5rem;font-weight:900;color:#2563EB;margin:8px 0;">+</div>
-        <img src="./moc2.webp" alt="130 Dinâmicas de Educação Física — Mockup bônus" class="hero-mockup" loading="eager" style="margin-top: 0;" />
+        <img src="./moc2.webp" alt="130 Dinâmicas de Educação Física — Mockup bônus" class="hero-mockup" loading="lazy" width="420" height="420" style="margin-top: 0;" />
         <p class="hero-subtitle">
           130 dinâmicas organizadas, em PDF e PowerPoint editável — para você abrir, escolher e aplicar amanhã mesmo. Inclusive sem quadra.
         </p>
@@ -793,7 +794,7 @@
       </div>
       <div class="bonus-list">
         <div class="bonus-card">
-          <img src="./moc2.webp" alt="Calendário Semanal de Dinâmicas" class="bonus-img" loading="lazy" />
+          <img src="./moc2.webp" alt="Calendário Semanal de Dinâmicas" class="bonus-img" loading="lazy" width="90" height="90" />
           <div class="bonus-info">
             <p class="bonus-name">📅 Calendário Semanal de Dinâmicas</p>
             <p style="font-size:0.85rem;color:#6B7280;margin-bottom:10px;line-height:1.4;">Saiba exatamente o que aplicar em cada dia da semana, o ano todo.</p>
@@ -804,7 +805,7 @@
           </div>
         </div>
         <div class="bonus-card">
-          <img src="./moc2.webp" alt="Lista de Materiais por Semana" class="bonus-img" loading="lazy" />
+          <img src="./moc2.webp" alt="Lista de Materiais por Semana" class="bonus-img" loading="lazy" width="90" height="90" />
           <div class="bonus-info">
             <p class="bonus-name">📋 Lista de Materiais por Semana</p>
             <p style="font-size:0.85rem;color:#6B7280;margin-bottom:10px;line-height:1.4;">Organize seus materiais com antecedência e nunca seja pego de surpresa.</p>
@@ -877,11 +878,8 @@
               </div>
               <span>+210 Dinâmicas de Ed. Física</span>
             </div>
-            <div class="preco-item">
-              <div class="check-blue">
-                <svg viewBox="0 0 10 10" fill="none"><path d="M1.5 5l2.5 2.5 4.5-4.5" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-              <span>Sendo 80 Atividades Focadas Para Alunos com Dificuldade Motora</span>
+            <div class="preco-item" style="padding-left:30px;">
+              <span style="font-size:0.82rem;color:#6B7280;">↳ Sendo 80 Atividades Focadas Para Alunos com Dificuldade Motora</span>
             </div>
             <div class="preco-item" style="padding-left:30px;">
               <span style="font-size:0.82rem;color:#6B7280;">↳ 30 delas focadas em dinâmicas que não precisam de quadra</span>
@@ -1070,34 +1068,30 @@
   <!-- ===== JAVASCRIPT ===== -->
   <script>
     // ---- Contador regressivo (10 min, faz loop) ----
-    function createTimer(seconds, ...elements) {
-      let remaining = seconds;
+    function createTimer(seconds) {
+      var remaining = seconds;
+      var els = [document.getElementById('timer-top'), document.getElementById('timer-preco')];
       function tick() {
-        const m = Math.floor(remaining / 60);
-        const s = remaining % 60;
-        const display = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
-        elements.forEach(el => { if (el) el.textContent = display; });
+        var m = Math.floor(remaining / 60);
+        var s = remaining % 60;
+        var display = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+        for (var i = 0; i < els.length; i++) { if (els[i]) els[i].textContent = display; }
         if (--remaining < 0) remaining = seconds;
       }
       tick();
       setInterval(tick, 1000);
     }
-
-    const timerTop = document.getElementById('timer-top');
-    const timerPreco = document.getElementById('timer-preco');
-    createTimer(10 * 60, timerTop, timerPreco);
+    createTimer(600);
 
     // ---- FAQ Accordion ----
     document.querySelectorAll('.faq-question').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        const item = this.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        // Fecha todos
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
         document.querySelectorAll('.faq-item').forEach(function(i) {
           i.classList.remove('open');
           i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         });
-        // Abre o clicado (se estava fechado)
         if (!isOpen) {
           item.classList.add('open');
           this.setAttribute('aria-expanded', 'true');
