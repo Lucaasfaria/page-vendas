@@ -53,6 +53,7 @@
       );
       fbq("init", "980701594419086");
       fbq("track", "PageView");
+      fbq("track", "ViewContent");
     </script>
     <noscript
       ><img
@@ -77,16 +78,6 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var botoes = document.querySelectorAll('a[href*="pay.kiwify.com.br"]');
-    botoes.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        fbq('track', 'InitiateCheckout');
-      });
-    });
-  });
-</script>
     <style>
       /* ===== RESET & BASE ===== */
       *,
@@ -1801,6 +1792,13 @@
 
     <!-- ===== JAVASCRIPT ===== -->
     <script>
+      // ---- InitiateCheckout ----
+      document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          fbq('track', 'InitiateCheckout');
+        });
+      });
+
       // ---- Contador regressivo (10 min, faz loop) ----
       function createTimer(seconds) {
         var remaining = seconds;
