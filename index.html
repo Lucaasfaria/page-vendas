@@ -1767,17 +1767,6 @@
 
     <!-- ===== JAVASCRIPT ===== -->
     <script>
-      // ---- InitiateCheckout (proteção contra duplo disparo) ----
-      var _icFired = false;
-      document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          if (_icFired) return;
-          _icFired = true;
-          fbq('track', 'InitiateCheckout');
-          setTimeout(function() { _icFired = false; }, 2000);
-        });
-      });
-
       // ---- Contador regressivo (10 min, faz loop) ----
       function createTimer(seconds) {
         var remaining = seconds;
