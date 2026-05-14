@@ -282,6 +282,57 @@
         font-weight: 500;
       }
 
+      /* ===== HERO BONUS STRIP ===== */
+      .hero-bonus-strip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 28px auto 16px;
+        max-width: 700px;
+      }
+      .hero-bonus-item {
+        flex-shrink: 0;
+      }
+      .hero-bonus-item img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+      }
+      .hero-bonus-plus {
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: #2563eb;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+      .hero-bonus-label {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #111827;
+        margin: 12px auto 28px;
+        text-align: center;
+      }
+      .hero-bonus-label span {
+        color: #2563eb;
+      }
+      @media (max-width: 480px) {
+        .hero-bonus-item img {
+          width: 80px;
+          height: 80px;
+          border-radius: 8px;
+        }
+        .hero-bonus-plus {
+          font-size: 1.2rem;
+        }
+        .hero-bonus-strip {
+          gap: 6px;
+        }
+      }
+
       /* ===== DORES ===== */
       #dores {
         background: #f9fafb;
@@ -878,6 +929,36 @@
             210 dinâmicas organizadas, em PDF e PowerPoint editável — para você
             abrir, escolher e aplicar hoje mesmo.
           </p>
+
+          <!-- Mockups dos bônus -->
+          <div class="hero-bonus-strip">
+            <div class="hero-bonus-item">
+              <img src="./mock1.webp" alt="100 Dinâmicas de Ed. Física" loading="lazy" />
+            </div>
+            <span class="hero-bonus-plus">+</span>
+            <div class="hero-bonus-item">
+              <img src="./mock3.webp" alt="80 Dinâmicas para baixa mobilidade" loading="lazy" />
+            </div>
+            <span class="hero-bonus-plus">+</span>
+            <div class="hero-bonus-item">
+              <img src="./moc2.webp" alt="30 Dinâmicas para sala de aula" loading="lazy" />
+            </div>
+            <span class="hero-bonus-plus">+</span>
+            <div class="hero-bonus-item">
+              <img src="./ficha.png" alt="30 Fichas de Avaliação" loading="lazy" />
+            </div>
+            <span class="hero-bonus-plus">+</span>
+            <div class="hero-bonus-item">
+              <img src="./engaja.png" alt="Estratégias para Engajar Alunos" loading="lazy" />
+            </div>
+            <span class="hero-bonus-plus">+</span>
+            <div class="hero-bonus-item">
+              <img src="./lista.png" alt="Listas de Materiais + Planner" loading="lazy" />
+            </div>
+          </div>
+
+          <p class="hero-bonus-label"><span>6 materiais completos</span> — tudo incluso no seu acesso.</p>
+
           <div class="hero-cta-wrap">
             <span class="hero-cta-sub"
               >Acesso imediato · PDF + PowerPoint editável · Pagamento
